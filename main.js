@@ -122,7 +122,6 @@ $(document).ready(function ($) {
 jQuery(window).on('load', function () {
     $('body').removeClass('body-fixed');
 
-    //activating tab of filter
     let targets = document.querySelectorAll(".filter");
     let activeTab = 0;
     let old = 0;
@@ -134,7 +133,6 @@ jQuery(window).on('load', function () {
         targets[i].addEventListener("click", moveBar);
     }
 
-    // initial position on first === All 
     gsap.set(".filter-active", {
         x: targets[0].offsetLeft,
         width: targets[0].offsetWidth
